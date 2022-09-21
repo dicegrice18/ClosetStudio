@@ -2,7 +2,7 @@ import React from "react";
 import { StyleSheet, Text, View, ScrollView, Button, TextInput, onChangeText } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import SignUp from './SignUp';
+import Register from './SignUp';
 
 function SignIn({navigation}){
     return(
@@ -29,6 +29,7 @@ function SignIn({navigation}){
 
                 <Button 
                     title= "Registrati">
+                    onPress={() => navigation.navigate('Register')}
                 </Button>
                 
             </View>

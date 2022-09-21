@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, ScrollView, Button } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-const SignUp = () => {
+function Register({navigation}) {
     return (
         <View style={styles.mainView}>
             <Text>Sign Up</Text>
@@ -24,4 +24,4 @@ const styles = StyleSheet.create({
 
     },
 })
-export default SignUp;
+export default Register;
