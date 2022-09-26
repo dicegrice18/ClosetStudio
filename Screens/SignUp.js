@@ -1,3 +1,4 @@
+import { StatusBar } from "expo-status-bar";
 import React from "react";
 import { Image, StyleSheet, Text, View, ScrollView, Button, TextInput, onChangeText,TouchableOpacity } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
@@ -6,6 +7,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 function Register({navigation}) {
     return(
         <View style={styles.mainView}>
+            <StatusBar style="auto" />
             <View style={styles.topView}></View>
             <View style={styles.bottomView}>
                 <Text style={styles.Heading}>
