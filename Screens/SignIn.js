@@ -3,14 +3,16 @@ import React from "react";
 import { Image, StyleSheet, Text, View, ScrollView, Button, TextInput, onChangeText,TouchableOpacity } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import logo from './logo.png';
-import Register from './SignUp';
+
+
 
 function SignIn({navigation}){
     return(
         <View style={styles.mainView}>
             <StatusBar style="auto" />
-            <View style={styles.topView}></View>
+            <View style={styles.topView}>
+                <Image style={styles.Logo} source={require('./images/logo.png')}></Image>
+            </View>
             <View style={styles.bottomView}>
                 <Text style={styles.Heading}>
                     Bentornato,{'\n'} 
@@ -49,6 +51,7 @@ const styles = StyleSheet.create({
         display:'flex',
         justifyContent:'center',
         alignItems:'center',
+        
     },
     
     bottomView:{
@@ -127,6 +130,11 @@ const styles = StyleSheet.create({
         fontWeight:'bold',
         fontSize:18,
         color: 'black',
+    },
+
+    Logo:{
+        width:400,
+        height:80,
     },
 
 })

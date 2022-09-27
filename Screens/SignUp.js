@@ -8,7 +8,9 @@ function Register({navigation}) {
     return(
         <View style={styles.mainView}>
             <StatusBar style="auto" />
-            <View style={styles.topView}></View>
+            <View style={styles.topView}>
+                <Image style={styles.Logo} source={require('./images/logo.png')}></Image>
+            </View>
             <View style={styles.bottomView}>
                 <Text style={styles.Heading}>
                     Ciao,{'\n'}
@@ -105,5 +107,9 @@ const styles = StyleSheet.create({
         color: 'black',
     },
 
+    Logo: {
+        width: 400,
+        height: 80,
+    },
 })
 export default Register;

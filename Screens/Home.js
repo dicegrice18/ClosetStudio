@@ -40,7 +40,7 @@ export default class Home extends React.Component{
 
 
             <Pressable onPress={() => this.changeText('Wardrobe')} style={styles.IconBehave}>
-              <Image style={styles.Closet} source={require('./closet.png')}></Image>
+              <Image style={styles.Closet} source={require('./images/closet.png')}></Image>
             </Pressable>
 
             
